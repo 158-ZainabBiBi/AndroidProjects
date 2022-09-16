@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Assign_1_BSCS_19011519-158</string>
+
+    <string name="col1">Sr</string>
+    <string name="col2">Course Code</string>
+    <string name="col3">Course Title</string>
+    <string name="col4">Course CreditHours</string>
+
+    <string name="row1Sr">1</string>
+    <string name="row1Code">-</string>
+    <string name="row1Title">-</string>
+    <string name="row1CR">-</string>
+
+    <string name="row2Sr">2</string>
+    <string name="row2Code">-</string>
+    <string name="row2Title">-</string>
+    <string name="row2CR">-</string>
+
+    <string name="row3Sr">3</string>
+    <string name="row3Code">-</string>
+    <string name="row3Title">-</string>
+    <string name="row3CR">-</string>
+
+    <string name="row4Sr">4</string>
+    <string name="row4Code">-</string>
+    <string name="row4Title">-</string>
+    <string name="row4CR">-</string>
+
+    <string name="row5Sr">5</string>
+    <string name="row5Code">-</string>
+    <string name="row5Title">-</string>
+    <string name="row5CR">-</string>
+</resources>

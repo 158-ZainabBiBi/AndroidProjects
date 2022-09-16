@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txt_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="670dp"
+            android:text="COURSE REGISTRATION FORM"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_500"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/studentname"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Student Name:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_form" />
+
+        <EditText
+            android:id="@+id/txtstudentname"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter Student Name Here!"
+            android:minHeight="48dp"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_form" />
+
+        <TextView
+            android:id="@+id/fathername"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="37dp"
+            android:text="Roll No."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studentname" />
+
+        <EditText
+            android:id="@+id/txtstudentrollno"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter Roll No Here!"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtstudentname" />
+
+        <TextView
+            android:id="@+id/studentregno"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="38dp"
+            android:text="Registration No."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fathername" />
+
+        <EditText
+            android:id="@+id/txtstudentregno"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter Reg No Here!"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtstudentrollno" />
+
+        <TextView
+            android:id="@+id/coursetitles"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="38dp"
+            android:text="Course Title:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coursecodes" />
+
+        <EditText
+            android:id="@+id/txtcoursetitle"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter Course Title Here!"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtcoursecode" />
+
+        <TextView
+            android:id="@+id/coursecodes"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="37dp"
+            android:text="Course Code:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studentregno" />
+
+        <EditText
+            android:id="@+id/txtcoursecode"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Enter Course Code Here!"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtstudentregno" />
+
+        <TextView
+            android:id="@+id/coursechs"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="38dp"
+            android:text="Course CH:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coursetitles" />
+
+        <EditText
+            android:id="@+id/txtcoursech"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter Course CH Here!"
+            android:minHeight="48dp"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtcoursetitle" />
+
+        <TextView
+            android:id="@+id/hodremark"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="HOD Remarks:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coursechs" />
+
+        <EditText
+            android:id="@+id/txthodremarks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter HOD Remarks Here!"
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hodremark"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/hodnames"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Name:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txthodremarks" />
+
+        <EditText
+            android:id="@+id/txthodname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:hint="Name Here! "
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/hodnames"
+            app:layout_constraintTop_toBottomOf="@+id/txthodremarks" />
+
+        <EditText
+            android:id="@+id/txthodsignature"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Sign Here!"
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txthodremarks" />
+
+        <TextView
+            android:id="@+id/hodsignatures"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Signature:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txthodsignature"
+            app:layout_constraintTop_toBottomOf="@+id/txthodremarks"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/sscremark"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="SSC Remarks:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hodnames" />
+
+        <EditText
+            android:id="@+id/txtsscremarks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Enter SSC Remarks Here!"
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sscremark"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/sscnames"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Name:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtsscremarks" />
+
+        <EditText
+            android:id="@+id/txtsscname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:hint="Name Here! "
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/sscnames"
+            app:layout_constraintTop_toBottomOf="@+id/txtsscremarks" />
+
+        <TextView
+            android:id="@+id/sscsignatures"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Signature:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtsscsignature"
+            app:layout_constraintTop_toBottomOf="@+id/txtsscremarks"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/txtsscsignature"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Sign Here!"
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtsscremarks" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Done"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
